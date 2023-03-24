@@ -22,8 +22,8 @@ const Gallery = () => {
             </div>
             <div className="top-gallery-col top-gallery-content-col">
                 <div className="top-gallery-content">
-                <h3 style={{"--i":".25s"}} className={inView ? "uppercase relative gallery-top-header slide-in" : "uppercase gallery-top-header slide-out"}>Your day at the gallery.</h3>
-                <p style={{"--i":".5s"}} className={inView ? "relative gallery-blurb slide-in" : "relative gallery-blurb slide-out"}>Wander through our
+                <h3 style={{"--i":".25s"}} className={inView ? "uppercase relative gallery-top-header slide-in-dash" : "uppercase gallery-top-header slide-out"}>Your day at the gallery.</h3>
+                <p style={{"--i":".5s"}} className={inView ? "relative gallery-blurb slide-in-dash" : "relative gallery-blurb slide-out"}>Wander through our
     distinct collections and find new insights about our artists. Dive into the
     details of their creative process.</p>
     </div>

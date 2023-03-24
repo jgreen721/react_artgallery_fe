@@ -187,15 +187,15 @@
   /* opacity: 0; */
 }
 
-.slide-in {
+.slide-in-dash {
   /* transform: translateX(0rem); */
   /* border: 5px solid green; */
-  /* transform: translateX(-150rem); */
+  transform: translateX(-150rem);
 
-  animation: slidein 1s var(--i) forwards;
+  animation: slidein2 1s var(--i) forwards;
 }
 
-@keyframes slidein {
+@keyframes slidein2 {
   100% {
     transform: translateX(0rem);
   }
