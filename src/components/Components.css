@@ -1,0 +1,87 @@
+button {
+  /* width: 30rem; */
+  height: 7.2rem;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  /* position: relative; */
+}
+
+.btn {
+  transition: 0.3s ease;
+}
+
+.tan-hover {
+  background: var(--tan);
+  color: var(--white);
+  transition: 0.2s ease;
+}
+
+.black-hover {
+  background: var(--black);
+  color: var(--white);
+  transition: 0.2s ease;
+}
+
+.arrow-div {
+  width: 5.6rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn:hover .arrow-div::after {
+  content: "";
+  background: var(--black);
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  bottom: -6rem;
+  border-radius: 50%;
+  filter: blur(6px);
+  left: 0rem;
+}
+
+.btn:hover {
+  transform: translateX(-1.5rem);
+}
+
+.btn:hover .btn-text::after {
+  content: "";
+  background: var(--tan);
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  bottom: -6rem;
+  border-radius: 50%;
+  filter: blur(6px);
+  left: 0rem;
+}
+
+.btn-text {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  padding: 0 2rem;
+  position: relative;
+}
+
+button:hover .black-hover {
+  background: var(--tan);
+}
+
+button:hover .tan-hover {
+  background: var(--black);
+}
+
+@media screen and (max-width: 650px) {
+  button {
+  }
+}
